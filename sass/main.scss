@@ -1,8 +1,8 @@
+@import './base/reset';
+@import './utils/vars';
+@import './utils/visually-hidden';
 @import './utils/placeholders';
 @import './utils/mixins';
-@import './utils/vars';
-@import './base/reset';
-@import './utils/visually-hidden';
 @import './base/container';
 @import './base/base';
 @import './layouts/header';
@@ -14,3 +14,4 @@
 @import './layouts/footer';
 @import './components/modal';
 @import './components/register-form';
+@import './layouts/menu';
