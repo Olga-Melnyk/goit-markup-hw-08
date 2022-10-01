@@ -3,10 +3,16 @@
 
   font-weight: 700;
   font-size: 20px;
-  line-height: calc(23 / 20);
+  line-height: calc(30 / 20);
   text-align: center;
+  letter-spacing: 0.03em;
 
   margin-bottom: 12px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    line-height: calc(23 / 20);
+  }
 }
 
 .register-form-group {
@@ -131,17 +137,31 @@
 }
 
 .register-form-desc {
-  line-height: calc(24 / 14);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14 / 12);
 
   color: var(--secondary-txt-cl);
 
   user-select: none;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
 }
 
 .register-form-link {
-  line-height: calc(24 / 14);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14 / 12);
 
   color: var(--accent-txt-cl);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
 }
 
 .register-form-btn {
