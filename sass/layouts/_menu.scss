@@ -122,6 +122,12 @@
   letter-spacing: 0.02em;
 
   color: var(--accent-txt-cl);
+
+  @media screen and (max-width: 479px) {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: calc(36 / 26);
+  }
 }
 
 .mobile-contact-mail {
@@ -136,6 +142,11 @@
 .mobile-socials {
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 479px) {
+    flex-wrap: wrap;
+    align-items: start;
+  }
 }
 
 .mobile-socials-item:not(:last-child) {
@@ -144,8 +155,14 @@
   padding-right: 10px;
 }
 
-.mobile-socials-item:not(:first-child) {
-  padding-left: 10px;
+.mobile-socials-item {
+  &:not(:first-child) {
+    padding-left: 10px;
+  }
+
+  @media screen and (max-width: 479px) {
+    padding-left: 10px;
+  }
 }
 
 .mobile-socials-link {

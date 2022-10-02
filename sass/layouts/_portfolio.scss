@@ -3,15 +3,39 @@
 }
 
 .section-portfolio {
-  @extend %section;
+  @include section;
+
+  @media screen and (min-width: 1200px) {
+    @include section(94px, 94px);
+  }
 }
 
 .list-btn-portfolio {
   display: flex;
   gap: 8px;
-  justify-content: center;
 
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+
+  @media screen and (max-width: 479px) {
+    max-width: 320px;
+  }
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+
+    width: 326px;
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    flex-wrap: nowrap;
+
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .item-btn {
@@ -40,9 +64,19 @@
 }
 
 .portfolio-card {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+.card-item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
 }
 
 .portfolio-thumb {

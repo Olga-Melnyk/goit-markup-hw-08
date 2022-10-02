@@ -1,8 +1,3 @@
-.section-portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 :root {
   /* Fonts */
   --main-font: Roboto, sans-serif;
@@ -317,15 +312,50 @@ button {
   border-bottom: 1px solid #ececec;
 }
 
+.section-portfolio {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section-portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .list-btn-portfolio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 8px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 479px) {
+  .list-btn-portfolio {
+    max-width: 320px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .list-btn-portfolio {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 326px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .list-btn-portfolio {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list-btn-portfolio {
+    margin-bottom: 50px;
+  }
 }
 
 .item-btn {
@@ -355,13 +385,21 @@ button {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 30px;
+@media screen and (min-width: 768px) {
+  .portfolio-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .portfolio-thumb {
@@ -862,6 +900,13 @@ button {
   letter-spacing: 0.02em;
   color: var(--accent-txt-cl);
 }
+@media screen and (max-width: 479px) {
+  .mobile-contact-tel {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.3846153846;
+  }
+}
 
 .mobile-contact-mail {
   font-weight: 500;
@@ -879,6 +924,15 @@ button {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 479px) {
+  .mobile-socials {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+}
 
 .mobile-socials-item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
@@ -887,6 +941,11 @@ button {
 
 .mobile-socials-item:not(:first-child) {
   padding-left: 10px;
+}
+@media screen and (max-width: 479px) {
+  .mobile-socials-item {
+    padding-left: 10px;
+  }
 }
 
 .mobile-socials-link {
