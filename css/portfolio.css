@@ -457,6 +457,12 @@ button {
   padding-left: 24px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-card-container-tablet {
+    padding-bottom: 56px;
+  }
+}
+
 .portfolio-card-link {
   display: block;
   -webkit-transition-property: -webkit-box-shadow;
@@ -483,10 +489,21 @@ button {
   margin-bottom: 4px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrap {
+    display: block;
+  }
+}
+
 .subtitle-img {
   font-size: 16px;
   line-height: 1.875;
   color: var(--secondary-txt-cl);
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .subtitle-img:first-child {
+    padding-bottom: 36px;
+  }
 }
 
 .footer {

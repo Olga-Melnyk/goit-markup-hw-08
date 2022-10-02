@@ -131,6 +131,12 @@
   padding-left: 24px;
 }
 
+.portfolio-card-container-tablet {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 56px;
+  }
+}
+
 .portfolio-card-link {
   display: block;
   transition-property: box-shadow;
@@ -153,9 +159,21 @@
   margin-bottom: 4px;
 }
 
+.wrap {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
+  }
+}
+
 .subtitle-img {
   font-size: 16px;
   line-height: calc(30 / 16);
 
   color: var(--secondary-txt-cl);
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &:first-child {
+      padding-bottom: 36px;
+    }
+  }
 }
