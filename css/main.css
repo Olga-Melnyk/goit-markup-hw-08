@@ -501,6 +501,11 @@ button {
 .section-features .list-item {
   width: 100%;
 }
+@media screen and (max-width: 767px) {
+  .section-features .list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 768px) {
   .section-features .list-item {
     width: 354px;
@@ -716,6 +721,9 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
