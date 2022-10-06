@@ -104,6 +104,10 @@
   }
 }
 
+.mobile-menu-link.active {
+  color: var(--accent-txt-cl);
+}
+
 .mobile-contact {
   margin-bottom: 64px;
 }
